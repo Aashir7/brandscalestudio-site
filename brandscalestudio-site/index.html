@@ -8,6 +8,19 @@
 <title>Brandscale Studio</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <script defer="" src="script.js"></script>
+<!-- AOS Animation Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+  });
+</script>
+
 </head>
 <body class="bg-black text-white font-sans">
 <main class="min-h-screen">
@@ -55,31 +68,36 @@
 </section>
 <section class="py-20 px-4 text-center bg-black">
   <div class="max-w-6xl mx-auto">
-    <h2 class="text-3xl md:text-4xl font-bold mb-12 text-white">Proven Results from TikTok Shop</h2>
+    <h2 class="text-3xl md:text-4xl font-bold mb-12 text-white" data-aos="fade-up">
+      Proven Results from TikTok Shop
+    </h2>
 
     <div class="grid gap-8 md:grid-cols-3">
       <!-- Screenshot 1 -->
-      <div>
+      <div data-aos="fade-up" data-aos-delay="100">
         <img src="proof_1.jpeg" alt="GMV Proof 1" class="rounded-xl shadow-lg mx-auto w-full max-w-xs">
         <p class="text-gray-300 text-sm mt-4">Generated $58K GMV from 18M+ views and 179K clicks in one month</p>
       </div>
 
       <!-- Screenshot 2 -->
-      <div>
+      <div data-aos="fade-up" data-aos-delay="200">
         <img src="proof_2.jpeg" alt="GMV Proof 2" class="rounded-xl shadow-lg mx-auto w-full max-w-xs">
         <p class="text-gray-300 text-sm mt-4">$1.1K GMV from only 8.5k views with a 9.62% CTR</p>
       </div>
 
       <!-- Screenshot 3 -->
-      <div>
+      <div data-aos="fade-up" data-aos-delay="300">
         <img src="proof_3.jpeg" alt="GMV Proof 3" class="rounded-xl shadow-lg mx-auto w-full max-w-xs">
         <p class="text-gray-300 text-sm mt-4">$83K GMV with 4.8K orders</p>
       </div>
     </div>
 
-    <p class="text-white text-lg font-medium mt-12">Generated over $500K+ as affiliates — now we help brands do the same</p>
+    <p class="text-white text-lg font-medium mt-12" data-aos="fade-up" data-aos-delay="400">
+      Generated over $500K+ as affiliates — now we help brands do the same
+    </p>
   </div>
 </section>
+
 
 <section class="py-20 px-4 text-center" id="contact">
 <div class="max-w-2xl mx-auto">
