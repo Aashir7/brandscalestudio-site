@@ -11,7 +11,7 @@ document.getElementById('leadForm').addEventListener('submit', async function(e)
       RunningAds: form.elements["RunningAds"].value,
       AdDuration: form.elements["AdDuration"].value,
       MonthlyBudget: form.elements["MonthlyBudget"].value,
-      TiktokGoal: form.elements["TiktokGoal"].value, // ✅ ← New line added
+      TikTokGoal: form.elements["TikTokGoal"].value,  // ✅ THIS WAS MISSING
       Timestamp: new Date().toLocaleString()
     }]
   };
